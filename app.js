@@ -8,7 +8,6 @@ var logger = require('morgan');
 var methodOverride = require('method-override');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-var multer = require('multer');
 var errorHandler = require('errorhandler');
 
 
@@ -30,10 +29,14 @@ app.use(favicon(path.join(__dirname, 'public/images/favicon02.png')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(multer());
 app.use(methodOverride());
 app.use(cookieParser('4567uyPweyhKKIJ471254'));
-app.use(session('Udaiea524952QsdkfjioqEr'));
+app.use(session({
+    secret: 'zzz',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { }
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 

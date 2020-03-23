@@ -1,0 +1,3 @@
+C:\Users\VOLCAN\Source\Repos\CotizacionEspirituosa\obj\Debug\CotizacionEspirituosa.njsprojAssemblyReference.cache
+C:\Users\VOLCAN\Source\Repos\CotizacionEspirituosa\obj\Debug\CotizacionEspirituosa.njsproj.CoreCompileInputs.cache
+C:\Users\VOLCAN\Source\Repos\CotizacionEspirituosa\bin\Microsoft.NodejsTools.WebRole.dll
